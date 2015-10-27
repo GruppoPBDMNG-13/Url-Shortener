@@ -43,7 +43,7 @@
 						<id>copy-dependencies</id>
 						<phase>prepare-package</phase>
 						<goals>
-							<goal>copy-dependencies</goal>
+							
 						</goals>
 						<configuration>
 							<outputDirectory>${project.build.directory}/lib</outputDirectory>
@@ -63,5 +63,22 @@
             <version>2.2</version>
 	    <type>jar</type>
         </dependency>
+
+	<dependency>
+   		<groupId>redis.clients</groupId>
+  		<artifactId>jedis</artifactId>
+   		<version>2.2.0</version>
+	</dependency>
   </dependencies>
 </project>
+
+
+<pluginManagement>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-resources-plugin</artifactId>
+            <version>2.6</version>
+        </plugin>
+    </plugins>
+</pluginManagement>
