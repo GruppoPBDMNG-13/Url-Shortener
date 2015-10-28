@@ -3,7 +3,7 @@ package dao;
 import dao.jedis.JedisDb;
 
 public class DaoFactory {
-	private static final int JEDIS=1;
+	public static final int JEDIS=1;
 	
 	/**
 	 * 
