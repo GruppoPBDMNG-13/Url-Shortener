@@ -1,6 +1,11 @@
 package entity;
 
 
+/**
+ * 
+ * @author Giuseppe Onesto
+ * @author Mattia Menna
+ */
 public class NewUrlRequest {
 	private String custom;
 	private final String longUrl;
@@ -16,7 +21,7 @@ public class NewUrlRequest {
 	}
 	
 	/**
-	 * 
+	 * Assigns to the attribute "shortUrl" of this NewUrlRequest the value in input
 	 * @param url: shortUrl associated to the specified longUrl
 	 */
 	public void setShortUrl(String url) {

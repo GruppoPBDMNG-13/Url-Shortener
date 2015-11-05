@@ -11,8 +11,6 @@ public class Main {
 	
 	private static BaseHandler b;
 	
-    
-	
 	public static void main(String[] args) {
     	
 		setup();
@@ -21,10 +19,7 @@ public class Main {
 				-> {
 					b = new NewUrlHandler();
 					return b.process(request);
-                });
-		
-		
-
+                });	
     		
     }
     
@@ -50,8 +45,9 @@ public class Main {
 			return "OK";
 		});
 		
-		
-    }
+    }	
+
+    
 }
     
 
