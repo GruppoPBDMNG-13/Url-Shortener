@@ -1,7 +1,8 @@
 package entity;
 
+
 public class NewUrlRequest {
-	private String shortUrl;
+	private String custom;
 	private final String longUrl;
 	
 	/**
@@ -10,7 +11,7 @@ public class NewUrlRequest {
 	 * @param longUrl
 	 */
 	public NewUrlRequest(String shortUrl, String longUrl) {
-		this.shortUrl=shortUrl;
+		this.custom=shortUrl;
 		this.longUrl=longUrl;
 	}
 	
@@ -19,7 +20,7 @@ public class NewUrlRequest {
 	 * @param url: shortUrl associated to the specified longUrl
 	 */
 	public void setShortUrl(String url) {
-		this.shortUrl=url;
+		this.custom=url;
 	}
 	
 	/**
@@ -27,7 +28,7 @@ public class NewUrlRequest {
 	 * @return shortUrl
 	 */
 	public String getShortUrl() {
-		return this.shortUrl;
+		return this.custom;
 	}
 	
 	/**
