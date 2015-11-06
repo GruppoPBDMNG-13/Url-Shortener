@@ -1,5 +1,4 @@
 package dao;
-
 import dao.jedis.JedisDb;
 
 public class DaoFactory {

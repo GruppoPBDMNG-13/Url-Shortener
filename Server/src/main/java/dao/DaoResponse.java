@@ -44,4 +44,14 @@ public class DaoResponse {
 	public Object getResponse() {
 		return this.response;
 	}
+	
+	public boolean equals(Object o){
+		DaoResponse r = (DaoResponse) o;
+		
+		if(r.getCode().equals(this.getCode()) && r.getResponse().equals(this.getResponse()))
+			return true;
+		
+		return false;
+		
+	}
 }
