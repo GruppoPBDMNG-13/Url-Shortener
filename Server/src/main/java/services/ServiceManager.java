@@ -14,6 +14,7 @@ import entity.CommonResponse;
 import utility.ResponseCode;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.LinkedList;
 import java.util.List;
 /**
@@ -54,7 +55,11 @@ class ServiceManager {
 		
 	}
 	
-	
+	/**
+	 * Method for recovering statistics in the database
+	 * @param r Parameters of the request
+	 * @return The statistics wrapped in a CommonResponse class
+	 */
 	@SuppressWarnings("unchecked")
 	static CommonResponse getStatistic(GetStatisticRequest r) {
 		d = DaoFactory.getInstance(DaoFactory.JEDIS);
@@ -74,10 +79,14 @@ class ServiceManager {
 		
 	}
 	
-	
+	/**
+	 * Method that recovers a long url
+	 * @param r Parameters of the request
+	 * @return the long url wrapped in a CommonResponse class
+	 */
 	static CommonResponse getLongUrl(GetLongUrlRequest r) {
 		d = DaoFactory.getInstance(DaoFactory.JEDIS);
-		DaoResponse dr = d.getUrl(r.getCustom(),r.getBrowser(),r.getIp(),LocalDate.now().toString());
+		DaoResponse dr = d.getUrl(r.getCustom(),r.getBrowser(),r.getIp());
 		
 		CommonResponse resp = new GetLongUrlResponse();
 		ResponseCode c = dr.getCode();

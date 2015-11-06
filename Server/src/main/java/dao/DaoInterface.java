@@ -24,7 +24,7 @@ public interface DaoInterface {
 	 * @return a DaoResponse which Response contains the longUrl associated to the shortUrl 
 	 * in input, if it exists in the database; a message of error or missing otherwise
 	 */
-	public DaoResponse getUrl(String shortUrl, String browser, String ip, String dateTime);
+	public DaoResponse getUrl(String shortUrl, String browser, String ip);
 	/**
 	 * 
 	 * @param shortUrl

@@ -81,7 +81,7 @@ public class JedisDb implements DaoInterface{
 
 	
 	@Override
-	public DaoResponse getUrl(String shortUrl, String browser, String ip, String dateTime) {
+	public DaoResponse getUrl(String shortUrl, String browser, String ip) {
 		if(! resp.getCode().equals(ResponseCode.NOT_CONNECTED)) {
 			DaoRequest r = new DaoRequest(RequestCode.URL,shortUrl);
 			
@@ -273,9 +273,12 @@ public class JedisDb implements DaoInterface{
 	
 	private String getNowDate(){
 		LocalDateTime timestamp = LocalDateTime.now();
-		ZonedDateTime timestampzoned = ZonedDateTime.of(timestamp, ZoneId.of("Europe/Rome"));
-		String time = timestampzoned.format(DateTimeFormatter.ofLocalizedDateTime(FormatStyle.LONG));
-	    return time;
+		String time ="";
+		time = timestamp.getMonth()+ " " + timestamp.getDayOfMonth() +", " +
+				((Integer)timestamp.getYear()).toString() + " "
+		+ timestamp.getHour()+":"+timestamp.getMinute()+":"+timestamp.getSecond();
+		
+		return time;
 	}
 	
 

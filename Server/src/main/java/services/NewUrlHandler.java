@@ -1,6 +1,8 @@
 
 package services;
 
+
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.UnsupportedEncodingException;
@@ -29,13 +31,12 @@ import utility.ResponseCode;
  * @author Mattia Menna
  * @author Giuseppe Onesto
  */
-public class NewUrlHandler implements BaseHandler{
+public class NewUrlHandler{
 	
 	/**
-	 * Method that builds the response of the request to insert a new short url
+	 * Method that builds the response of the request
 	 * @return The response
 	 */
-	@Override
 	public String process(Request clientRequest){
 		Gson gson = new GsonBuilder().create();
 		
