@@ -202,8 +202,8 @@
 	<script src="js/angular-sanitize.js"></script>
     <!-- Angular module -->
 	<script src="js/Angular/App.js"></script>
-	<script src="js/Angular/controller/ShortenerController.js"></script>
-	<script src="js/Angular/controller/StatisticsController.js"></script>
+	<script src="js/controller/ShortenerController.js"></script>
+	<script src="js/controller/StatisticsController.js"></script>
 	
 
     <!-- jQuery -->
