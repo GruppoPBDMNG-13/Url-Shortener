@@ -19,6 +19,7 @@ import utility.ResponseCode;
 
 import org.junit.Before;
 
+
 public class JedisDBTest {
 	private static final String EXISTS = "The shortUrl already exists";
 	private static final String NOTEXISTS = "The short Url isn't correct";
