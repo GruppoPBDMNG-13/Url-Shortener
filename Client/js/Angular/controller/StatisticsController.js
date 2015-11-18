@@ -1,5 +1,6 @@
 angular.module('url-shortener').controller('StatisticsController',['$http','$scope',function($http,$scope){
 		
+	$scope.customUrlRegex = /^([0-9a-zA-Z-]{0,30})$/;
 			
 			var callback = function(response){
 			switch(response.code){

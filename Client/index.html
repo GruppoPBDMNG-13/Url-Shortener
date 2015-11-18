@@ -137,6 +137,7 @@
             type="text"
             class="form-control"
 	    ng-model="statisticData.tiny"
+	    ng-pattern="customUrlRegex"
             maxlength="30">
         </div>
 			 <a ng-disabled="statisticData.tiny == '' ||
