@@ -3,14 +3,14 @@ A tiny url creator that offers the possibility to get statistics about a specifi
 
 ##How to install Url-Shortener:
 
-1. Clone the repository
+1. Clone the repository:
 'git clone https://github.com/GruppoPBDMNG-13/Url-Shortener.git'
 
-2. Build the image 
-docker build -t gruppopbdmng-13/url-shortener .
+2. Build the image:
+'docker build -t gruppopbdmng-13/url-shortener .
 
-3. Run it!
-docker run -p 8080:80 -p 4567:4567 -d gruppopbdmng-13/url-shortener /Script.sh
+3. Run it!:
+'docker run -p 8080:80 -p 4567:4567 -d gruppopbdmng-13/url-shortener /Script.sh'
 
 ##How to use Url-Shortener
 Once correctly installed and running, you can use it going to the Url-Shortener home at "http://localhost:8080"
